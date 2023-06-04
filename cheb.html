@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чебурашка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a href="./main.html">Главная</a>
+        <a href="./news.html">Новости</a>
+        <a href="./trends.html">В тренде</a>
+        <a href="./skoro.html">Что посмотреть?</a>
+        <a href="./ananas.php">О нас</a>
+    </div>
+
+    <div class="films">
+
+        <div class="film_pic1">
+            <img src="css/cheb_film.png">
+        </div>
+
+        <div class = "cheb_font1">
+            Чебурашка
+        </div>
+
+        <div class = "films_font2">
+            Год производства <br>
+            Страна <br>
+            Жанр <br>
+            Слоган <br>
+            Режиссер <br>
+            Бюджет <br>
+            Дата выхода <br>
+            Премьера в России <br>
+            Время <br>
+            Возраст 
+        </div>
+
+        <div class = "films_font3">
+            2022 <br>
+            Россия <br>
+            Семейный, комедия <br>
+            «Гена на» <br>
+            Дмитрий Дьяченко <br>
+            $ 10 000 000 <br>
+            1 января 2023 <br>
+            1 января 2023 <br>
+            113 мин / 01:53 <br>
+            6+
+        </div>
+
+        <div class="films_font4">
+            Описание
+        </div>
+
+        <div class="films_font5">
+            Иногда, чтобы вернуть солнце и улыбки в 
+            мир взрослых, нужен один маленький 
+            ушастый герой. Мохнатого непоседливого 
+            зверька из далекой апельсиновой страны
+            ждут удивительные приключения в тихом 
+            приморском городке, где ему предстоит 
+            найти себе имя, друзей и дом.
+        </div>
+
+        <div class="films_font6">
+            Помогать — и мешать! — ему в этом будут нелюдимый старик-садовник, странная 
+            тетя-модница и ее капризная внучка, мальчик, который никак не начнет говорить, и его 
+            мама, которой приходится несладко, хотя она и варит самый вкусный на свете шоколад. 
+            И многие-многие другие, в чью жизнь вместе с ароматом апельсинов вот-вот ворвутся 
+            волшебство и приключения.
+        </div>
+
+        <div class="film_trailer">
+            <iframe width="700" height="392" src="https://www.youtube.com/embed/x1qvJL7NF9s" title="Чебурашка - трейлер" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <script>
+        function addLink() {
+            var body_element = document.getElementsByTagName('body')[0];
+            var selection;
+            selection = window.getSelection();
+            var pagelink = "<br /><br /> Источник: <a href='"+document.location.href+"'>http://blvnlzgi.beget.tech/main.html</a><br />";
+            var copytext = selection + pagelink;
+            var newdiv = document.createElement('div');
+            newdiv.style.position='absolute';
+            newdiv.style.left='-99999px';
+            body_element.appendChild(newdiv);
+            newdiv.innerHTML = copytext;
+            selection.selectAllChildren(newdiv);
+            window.setTimeout(function() {
+            body_element.removeChild(newdiv);
+            },0);
+            }
+            document.oncopy = addLink;
+
+            </script>
+    
+    
+    
+</body>
+</html>

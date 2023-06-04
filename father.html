@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестный отец</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a href="./main.html">Главная</a>
+        <a href="./news.html">Новости</a>
+        <a href="./trends.html">В тренде</a>
+        <a href="./skoro.html">Что посмотреть?</a>
+        <a href="./ananas.php">О нас</a>
+    </div>
+
+    <div class="films">
+
+        <div class="film_pic1">
+            <img src="css/father_film.png">
+        </div>
+
+        <div class = "father_font1">
+            Крестный отец
+        </div>
+
+        <div class = "films_font2">
+            Год производства <br>
+            Страна <br>
+            Жанр <br>
+            Слоган <br> <br>
+            Режиссер <br>
+            Бюджет <br>
+            Дата выхода <br>
+            Время <br>
+            Возраст 
+        </div>
+
+        <div class = "films_font3">
+            1972 <br>
+            США <br>
+            Драма, криминал <br>
+            «Настоящая сила не может быть <br>
+            дана, она может быть взята...» <br>
+            Фрэнсис Форд Коппола <br>
+            $ 6 000 000 <br>
+            14 марта 1972 <br>
+            175 мин / 02:55 <br>
+            18+
+        </div>
+
+        <div class="films_font4">
+            Описание
+        </div>
+
+        <div class="films_font5">
+            Криминальная сага, повествующая о 
+            нью-йоркской сицилийской мафиозной 
+            семье Корлеоне. Фильм охватывает период 
+            1945-1955 годов. Глава семьи, Дон Вито 
+            Корлеоне, выдаёт замуж свою дочь. В это 
+            время со Второй мировой войны 
+            возвращается его любимый сын Майкл.
+
+        </div>
+
+        <div class="films_font6">
+            Майкл, герой войны, гордость семьи, не выражает желания заняться жестоким 
+            семейным бизнесом. Дон Корлеоне ведёт дела по старым правилам, но наступают иные 
+            времена, и появляются люди, желающие изменить сложившиеся порядки. На Дона 
+            Корлеоне совершается покушение.
+
+        </div>
+
+        <div class="film_trailer">
+            <iframe width="700" height="392" src="https://www.youtube.com/embed/H04N84G-v-Q" title="Крестный отец 💥 50-летие фильма 💥 Русский трейлер 💥 Фильм 1972" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <script>
+        function addLink() {
+            var body_element = document.getElementsByTagName('body')[0];
+            var selection;
+            selection = window.getSelection();
+            var pagelink = "<br /><br /> Источник: <a href='"+document.location.href+"'>http://blvnlzgi.beget.tech/main.html</a><br />";
+            var copytext = selection + pagelink;
+            var newdiv = document.createElement('div');
+            newdiv.style.position='absolute';
+            newdiv.style.left='-99999px';
+            body_element.appendChild(newdiv);
+            newdiv.innerHTML = copytext;
+            selection.selectAllChildren(newdiv);
+            window.setTimeout(function() {
+            body_element.removeChild(newdiv);
+            },0);
+            }
+            document.oncopy = addLink;
+
+            </script>
+    
+</body>
+</html>

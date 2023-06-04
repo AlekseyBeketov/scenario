@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бригада</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a href="./main.html">Главная</a>
+        <a href="./news.html">Новости</a>
+        <a href="./trends.html">В тренде</a>
+        <a href="./skoro.html">Что посмотреть?</a>
+        <a href="./ananas.php">О нас</a>
+    </div>
+
+    <div class="films">
+
+        <div class="film_pic1">
+            <img src="css/brigada_film.png">
+        </div>
+
+        <div class = "brigada_font1">
+            Бригада
+        </div>
+
+        <div class = "films_font2">
+            Год производства <br>
+            Страна <br>
+            Жанр <br>
+            Слоган <br> <br>
+            Режиссер <br>
+            Дата выхода <br>
+            Время <br> <br>
+            Возраст 
+        </div>
+
+        <div class = "films_font3">
+            2002 <br>
+            Россия <br>
+            Драма, криминал, боевик <br>
+            «За всё, что мы делаем, отвечать <br>
+            будем вместе!» <br>
+            Алексей Сидоров <br>
+            23 сентября 2002 <br>
+            1 сезон / 15 серий <br>
+            52 мин / 00:52 <br>
+            18+
+        </div>
+
+        <div class="films_font4">
+            Описание
+        </div>
+
+        <div class="films_font5">
+            Это история четырех друзей детства, обычных 
+            московских парней, Саши Белого, Космоса, 
+            Пчелы и Фила, выросших в одном дворе. 
+            Друзья решили немного подзаработать, но 
+            незапланированное убийство вмиг 
+            перемешало все задуманное, поставив 
+            на кон их жизни.
+        </div>
+
+        <div class="films_font6">
+            Ставка слишком высока, но отступать некуда. Теперь парни прокладывают себе дорогу в 
+            криминальном мире и волею судеб превращаются в одну из самых сплоченных и 
+            влиятельных группировок…
+        </div>
+
+        <div class="film_trailer">
+            <iframe width="700" height="392" src="https://www.youtube.com/embed/Jv98XZIBJAI" title="Бригада - Трейлер (2002 г.)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <script>
+        function addLink() {
+            var body_element = document.getElementsByTagName('body')[0];
+            var selection;
+            selection = window.getSelection();
+            var pagelink = "<br /><br /> Источник: <a href='"+document.location.href+"'>http://blvnlzgi.beget.tech/main.html</a><br />";
+            var copytext = selection + pagelink;
+            var newdiv = document.createElement('div');
+            newdiv.style.position='absolute';
+            newdiv.style.left='-99999px';
+            body_element.appendChild(newdiv);
+            newdiv.innerHTML = copytext;
+            selection.selectAllChildren(newdiv);
+            window.setTimeout(function() {
+            body_element.removeChild(newdiv);
+            },0);
+            }
+            document.oncopy = addLink;
+
+            </script>
+    
+</body>
+</html>

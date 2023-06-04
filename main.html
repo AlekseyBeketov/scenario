@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проект по Web-технологиям</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="opanki.js" defer></script>
+
+</head>
+<body>
+
+        <div class="header">
+            <a href=""><ins>Главная</a>
+            <a href="./news.html">Новости</a>
+            <a href="./trends.html">В тренде</a>
+            <a href="./skoro.html">Что посмотреть?</a>
+            <a href="./ananas.php">О нас</a>
+        </div>
+       
+
+        <div class="main">
+            <div class="textmain1">SCENARIO</div>
+
+            <div class="textmain2">Это самая настоящая энциклопедия о кино. <br>
+                Здесь Вы сможете подобрать фильм под <br>
+                любое настроение и отлично <br>
+                провести время.</div>
+        </div>
+        
+        <script>
+        function addLink() {
+            var body_element = document.getElementsByTagName('body')[0];
+            var selection;
+            selection = window.getSelection();
+            var pagelink = "<br /><br /> Источник: <a href='"+document.location.href+"'>http://blvnlzgi.beget.tech/main.html</a><br />";
+            var copytext = selection + pagelink;
+            var newdiv = document.createElement('div');
+            newdiv.style.position='absolute';
+            newdiv.style.left='-99999px';
+            body_element.appendChild(newdiv);
+            newdiv.innerHTML = copytext;
+            selection.selectAllChildren(newdiv);
+            window.setTimeout(function() {
+            body_element.removeChild(newdiv);
+            },0);
+            }
+            document.oncopy = addLink;
+
+            </script>
+
+
+
+
+
+</body>
+</html>
+
+

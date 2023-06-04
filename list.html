@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список Шиндлера</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a href="./main.html">Главная</a>
+        <a href="./news.html">Новости</a>
+        <a href="./trends.html">В тренде</a>
+        <a href="./skoro.html">Что посмотреть?</a>
+        <a href="./ananas.php">О нас</a>
+    </div>
+
+    <div class="films">
+
+        <div class="film_pic1">
+            <img src="css/list_film.png">
+        </div>
+
+        <div class = "list_font1">
+            Список Шиндлера 
+        </div>
+
+        <div class = "films_font2">
+            Год производства <br>
+            Страна <br>
+            Жанр <br>
+            Слоган <br> 
+            Режиссер <br>
+            Бюджет <br>
+            Дата выхода <br>
+            Премьера в России <br>
+            Время <br>
+            Возраст 
+        </div>
+
+        <div class = "films_font3">
+            1993<br>
+            США <br>
+            Драма, биография, история, военный <br>
+            «Этот список - жизнь» <br>
+            Стивен Спилберг <br>
+            $ 22 000 000 <br>
+            30 ноября 1993 <br>
+            21 мая 1994 <br>
+            195 мин / 03:15 <br>
+            16+
+        </div>
+
+        <div class="films_font4">
+            Описание
+        </div>
+
+        <div class="films_font5">
+            В Польше в военный период евреи потеряли 
+            всё. Их гонят ото всюду, убивают, сжигают, и 
+            только один человек решается вступить на их 
+            защиту. Оскар Шиндлер - предприниматель из 
+            Германии, из сострадания и ради высшей 
+            справедливости рискует многим ради 
+            спасения никому не нужных евреев. 
+        </div>
+
+        <div class="films_font6">
+            Он выкупает их, даёт работу и в итоге составляет заветный список спасения, 
+            якобы нужных ему работников-евреев.
+        </div>
+
+        <div class="film_trailer">
+            <iframe width="700" height="392" src="https://www.youtube.com/embed/4r2Z0U9Y53o" title="Список Шиндлера (1993) — русский трейлер" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <script>
+        function addLink() {
+            var body_element = document.getElementsByTagName('body')[0];
+            var selection;
+            selection = window.getSelection();
+            var pagelink = "<br /><br /> Источник: <a href='"+document.location.href+"'>http://blvnlzgi.beget.tech/main.html</a><br />";
+            var copytext = selection + pagelink;
+            var newdiv = document.createElement('div');
+            newdiv.style.position='absolute';
+            newdiv.style.left='-99999px';
+            body_element.appendChild(newdiv);
+            newdiv.innerHTML = copytext;
+            selection.selectAllChildren(newdiv);
+            window.setTimeout(function() {
+            body_element.removeChild(newdiv);
+            },0);
+            }
+            document.oncopy = addLink;
+
+            </script>
+    
+</body>
+</html>

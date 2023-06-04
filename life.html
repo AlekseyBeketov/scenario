@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жизнь прекрасна</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a href="./main.html">Главная</a>
+        <a href="./news.html">Новости</a>
+        <a href="./trends.html">В тренде</a>
+        <a href="./skoro.html">Что посмотреть?</a>
+        <a href="./ananas.php">О нас</a>
+    </div>
+
+    <div class="films">
+
+        <div class="film_pic1">
+            <img src="css/life_film.png">
+        </div>
+
+        <div class = "life_font1">
+            Жизнь прекрасна 
+        </div>
+
+        <div class = "films_font2">
+            Год производства <br>
+            Страна <br>
+            Жанр <br>
+            Слоган <br> <br>
+            Режиссер <br>
+            Бюджет <br>
+            Дата выхода <br>
+            Премьера в России <br>
+            Время <br>
+            Возраст 
+        </div>
+
+        <div class = "films_font3">
+            1997 <br>
+            Италия <br>
+            Военный, комедия, драма <br>
+            «An unforgettable fable that proves love, <br>
+            family and imagination conquer all» <br>
+            Роберто Бениньи <br>
+            $ 20 000 000 <br>
+            20 декабря 1997 <br>
+            9 апреля 1999 <br>
+            116 мин / 01:56 <br>
+            12+
+        </div>
+
+        <div class="films_font4">
+            Описание
+        </div>
+
+        <div class="films_font5">
+            Италия, 1939 год. В город приезжает 
+            жизнерадостный Гвидо, случайно встретив 
+            школьную учительницу Дору, он влюбляется в 
+            неё с первого взгляда. Он покоряет её своими 
+            «волшебными» совпадениями, своей 
+            безграничной искренностью и невероятным 
+            чувством юмора.
+        </div>
+
+        <div class="films_font6">
+            Дора и Гвидо женятся, открывают свой книжный магазинчик и становятся родителями 
+            сына Джозуе. Фильм в первой своей части кажется доброй и романтической сказкой.
+
+        </div>
+
+        <div class="film_trailer">
+            <iframe width="700" height="392" src="https://www.youtube.com/embed/TcjfceqbC4M" title="Жизнь прекрасна (1997) «La vita è bella» - Трейлер (Trailer)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <script>
+        function addLink() {
+            var body_element = document.getElementsByTagName('body')[0];
+            var selection;
+            selection = window.getSelection();
+            var pagelink = "<br /><br /> Источник: <a href='"+document.location.href+"'>http://blvnlzgi.beget.tech/main.html</a><br />";
+            var copytext = selection + pagelink;
+            var newdiv = document.createElement('div');
+            newdiv.style.position='absolute';
+            newdiv.style.left='-99999px';
+            body_element.appendChild(newdiv);
+            newdiv.innerHTML = copytext;
+            selection.selectAllChildren(newdiv);
+            window.setTimeout(function() {
+            body_element.removeChild(newdiv);
+            },0);
+            }
+            document.oncopy = addLink;
+
+            </script>
+    
+</body>
+</html>

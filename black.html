@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чернобыль</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a href="./main.html">Главная</a>
+        <a href="./news.html">Новости</a>
+        <a href="./trends.html">В тренде</a>
+        <a href="./skoro.html">Что посмотреть?</a>
+        <a href="./ananas.php">О нас</a>
+    </div>
+
+    <div class="films">
+
+        <div class="film_pic1">
+            <img src="css/black_film.png">
+        </div>
+
+        <div class = "black_font1">
+            Чернобыль
+        </div>
+
+        <div class = "films_font2">
+            Год производства <br>
+            Страна <br>
+            Жанр <br>
+            Слоган <br> 
+            Режиссер <br>
+            Дата выхода <br>
+            Премьера в России <br>
+            Время <br> <br>
+            Возраст 
+        </div>
+
+        <div class = "films_font3">
+            2019 <br>
+            США, Великобритания <br>
+            Драма, история <br>
+            «Узнай цену лжи» <br>
+            Йохан Ренк <br>
+            6 мая 2019 <br>
+            7 мая 2019 <br>
+            1 сезон / 5 серий <br>
+            59 мин / 00:59 <br>
+            18+
+        </div>
+
+        <div class="films_font4">
+            Описание
+        </div>
+
+        <div class="films_font5">
+            26 апреля 1986 года в 1:23:45 во время 
+            проведения эксперимента по безопасности 
+            на Чернобыльской АЭС происходит взрыв 
+            реактора и пожар. Пожарные без спецзащиты 
+            прибывают на место аварии, не подозревая, 
+            что оказались в эпицентре крупнейшей 
+            техногенной катастрофы. 
+        </div>
+
+        <div class="films_font6">
+            Руководство ЧАЭС уверяет Кремль, что ситуация под контролем, и радиационный фон в 
+            норме, но по настоянию академика Легасова его вместе с зампредседателя Совета 
+            Министров Борисом Щербиной отправляют разобраться в происходящем на месте.
+        </div>
+
+        <div class="film_trailer">
+            <iframe width="700" height="392" src="https://www.youtube.com/embed/qtY2sel76qo" title="Чернобыль | Трейлер" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <script>
+        function addLink() {
+            var body_element = document.getElementsByTagName('body')[0];
+            var selection;
+            selection = window.getSelection();
+            var pagelink = "<br /><br /> Источник: <a href='"+document.location.href+"'>http://blvnlzgi.beget.tech/main.html</a><br />";
+            var copytext = selection + pagelink;
+            var newdiv = document.createElement('div');
+            newdiv.style.position='absolute';
+            newdiv.style.left='-99999px';
+            body_element.appendChild(newdiv);
+            newdiv.innerHTML = copytext;
+            selection.selectAllChildren(newdiv);
+            window.setTimeout(function() {
+            body_element.removeChild(newdiv);
+            },0);
+            }
+            document.oncopy = addLink;
+
+            </script>
+    
+</body>
+</html>

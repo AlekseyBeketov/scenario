@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучше звоните Солу</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a href="./main.html">Главная</a>
+        <a href="./news.html">Новости</a>
+        <a href="./trends.html">В тренде</a>
+        <a href="./skoro.html">Что посмотреть?</a>
+        <a href="./ananas.php">О нас</a>
+    </div>
+
+    <div class="films">
+
+        <div class="film_pic1">
+            <img src="css/better_call_saul_film.png">
+        </div>
+
+        <div class = "better_call_saul_font1">
+            Better call Saul
+        </div>
+
+        <div class = "films_font2">
+            Год производства <br>
+            Страна <br>
+            Жанр <br>
+            Слоган <br> 
+            Режиссер <br>
+            Дата выхода <br>
+            Премьера в России <br>
+            Время <br> <br>
+            Возраст 
+        </div>
+
+        <div class = "films_font3">
+            2015-2022<br>
+            США <br>
+            Драма, криминал <br>
+            «Make the call» <br>
+            Винс Гиллиган, Томас Шнауз, Питер Гулд <br>
+            8 февраля 2015 <br>
+            5 апреля 2015 <br>
+            6 сезон / 63 серии <br>
+            46 мин / 00:46 <br>
+            16+
+        </div>
+
+        <div class="films_font4">
+            Описание
+        </div>
+
+        <div class="films_font5">
+            События сериала разворачиваются в 2002 
+            году в городе Альбукерке и сосредоточены на 
+            жизни адвоката Джимми Макгилла за 6 лет до 
+            его появления в сериале «Во все тяжкие» и 
+            знакомства с его главными героями, однако 
+            некоторые события происходят во время и 
+            после оригинального сериала.
+        </div>
+
+        <div class="films_font6">
+            Сериал показывает перевоплощение мелкого адвоката из Альбукерке Джимми 
+            МакГилла в криминального адвоката под рабочим псевдонимом Сол Гудман. Действо 
+            картины переплетается с сериалом «Во все тяжкие».
+        </div>
+
+        <div class="film_trailer">
+            <iframe width="700" height="392" src="https://www.youtube.com/embed/SSUav9o-5r4" title="лучше звоните солу - трейлер" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <script>
+        function addLink() {
+            var body_element = document.getElementsByTagName('body')[0];
+            var selection;
+            selection = window.getSelection();
+            var pagelink = "<br /><br /> Источник: <a href='"+document.location.href+"'>http://blvnlzgi.beget.tech/main.html</a><br />";
+            var copytext = selection + pagelink;
+            var newdiv = document.createElement('div');
+            newdiv.style.position='absolute';
+            newdiv.style.left='-99999px';
+            body_element.appendChild(newdiv);
+            newdiv.innerHTML = copytext;
+            selection.selectAllChildren(newdiv);
+            window.setTimeout(function() {
+            body_element.removeChild(newdiv);
+            },0);
+            }
+            document.oncopy = addLink;
+
+            </script>
+        
+        
+    
+</body>
+</html>

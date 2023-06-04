@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Король и Шут</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <a href="./main.html">Главная</a>
+        <a href="./news.html">Новости</a>
+        <a href="./trends.html">В тренде</a>
+        <a href="./skoro.html">Что посмотреть?</a>
+        <a href="./ananas.php">О нас</a>
+    </div>
+
+    <div class="films">
+
+        <div class="film_pic1">
+            <img src="css/king_joke_film.png">
+        </div>
+
+        <div class = "king_joke_font1">
+            Король и Шут 
+        </div>
+
+        <div class = "films_font2">
+            Год производства <br>
+            Страна <br>
+            Жанр <br>
+            Слоган <br> 
+            Режиссер <br>
+            Дата выхода <br>
+            Премьера в России <br>
+            Время <br> <br>
+            Возраст 
+        </div>
+
+        <div class = "films_font3">
+            2023<br>
+            Россия <br>
+            Музыка, биография, драма <br>
+            «Я своих фантазий страждущий герой» <br>
+            Рустам Мосафирг <br>
+            2 марта 2023 <br>
+            2 марта 2023 <br>
+            1 сезон / 8 серий <br>
+            50 мин / 00:50 <br>
+            18+
+        </div>
+
+        <div class="films_font4">
+            Описание
+        </div>
+
+        <div class="films_font5">
+            Горшок, Князь и Шут — герои панк-сказки, в 
+            которой студенты реставрационного училища 
+            стали одной из главных рок-групп страны, 
+            собрали «Юбилейный», покорили Москву, 
+            выступили как хедлайнеры на фестивале 
+            «Нашествие» и создали целую 
+            фэнтези-вселенную. 
+        </div>
+
+        <div class="films_font6">
+            Группа вошла в историю, а тексты их песен ожили в мире-фантазии, где Горшок и Князь 
+            отправляются спасать принцессу из плена колдуна.
+        </div>
+
+        <div class="film_trailer">
+            <iframe width="700" height="392" src="https://www.youtube.com/embed/XZqRYNbdB0g" title="Король и Шут | Трейлер | Премьера 2 марта только на Кинопоиске" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <script>
+        function addLink() {
+            var body_element = document.getElementsByTagName('body')[0];
+            var selection;
+            selection = window.getSelection();
+            var pagelink = "<br /><br /> Источник: <a href='"+document.location.href+"'>http://blvnlzgi.beget.tech/main.html</a><br />";
+            var copytext = selection + pagelink;
+            var newdiv = document.createElement('div');
+            newdiv.style.position='absolute';
+            newdiv.style.left='-99999px';
+            body_element.appendChild(newdiv);
+            newdiv.innerHTML = copytext;
+            selection.selectAllChildren(newdiv);
+            window.setTimeout(function() {
+            body_element.removeChild(newdiv);
+            },0);
+            }
+            document.oncopy = addLink;
+
+            </script>
+    
+</body>
+</html>

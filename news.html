@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+        <div class="header">
+            <a href="./main.html">Главная</a>
+            <a href=""><ins>Новости</a>
+            <a href="./trends.html">В тренде</a>
+            <a href="./skoro.html">Что посмотреть?</a>
+            <a href="./ananas.php">О нас</a>
+        </div>
+        <div class="con">
+
+            <div class="textnews">
+                Новости
+            </div>
+
+            <div class="textabout">
+                Читай самые горячие и актуальные новости из мира кино. Здесь <br> собрана только свежая и интересная информация российского <br>
+и зарубежного кинематографа.
+            </div>
+            
+            <div class="newspic1">
+                <img src="css/news_oscar.png">
+            </div>
+
+            <div class="texthead1">
+                Стали известны результаты <br> ежегодной кинопремии Оскар
+            </div>
+
+            <div class="texthead1_1">
+                Лучшими стали:
+            </div>
+            
+            <div class="textnew1">
+                Фильм — «Всё и сразу» <br>
+                Режиссер — Дэн Кван, Дэниэл Шайнерт <br>
+                Мужская роль — Брендан Фрэйзер <br>
+                Женская роль — Мишель Йео <br>
+                Мужская роль 2-го плана — Ке Хюи Куан <br>
+                Женская роль 2-го плана — Джейми Ли Кёртис <br>
+                Саундтрек — Фолькер Бертельманн
+            </div>
+
+            <div class="newspic2">
+                <img src="css/news_cheb.png">
+            </div>
+
+            <div class="texthead2">
+                На премьеру «Чебурашки» в <br>Эстонии продали все билеты
+            </div>
+
+            <div class="textnew2">
+                «В среду на премьеру "Чебурашки" в Нарве были проданы все билеты в 
+                кинотеатре Apollo Kino Astri. Также запланированы еще три сеанса в 
+                субботу и четыре – в воскресенье. Фильм идет на русском языке с 
+                субтитрами на эстонском.
+                <br> <br>
+                По данным СМИ, российскую ленту покажут только в Нарве, так как именно 
+                этот эстонский город густонаселен русскоговорящими людьми.
+            </div>
+
+            <div class="newspic3">
+                <img src="css/news_sh.png">
+            </div>
+
+            <div class="texthead3">
+                DreamWorks начала работу над <br>мультфильмом «Шрек 5»
+            </div>
+
+            <div class="textnew3">
+                Творческий партнер DreamWorks Крис Меледандри <br>
+                сообщил, что киностудия находится на стадии<br>
+                продакшена пятой части мультфильма «Шрек». <br>
+                <br> 
+                В частности, студия ведет переговоры об участии <br>
+                актеров из прошлых частей фильма — Майка Майерса, <br>
+                Камерон Диас и Эдди Мерфи — в новой части.
+            </div>
+
+
+        </div>
+        
+        <script>
+        function addLink() {
+            var body_element = document.getElementsByTagName('body')[0];
+            var selection;
+            selection = window.getSelection();
+            var pagelink = "<br /><br /> Источник: <a href='"+document.location.href+"'>http://blvnlzgi.beget.tech/main.html</a><br />";
+            var copytext = selection + pagelink;
+            var newdiv = document.createElement('div');
+            newdiv.style.position='absolute';
+            newdiv.style.left='-99999px';
+            body_element.appendChild(newdiv);
+            newdiv.innerHTML = copytext;
+            selection.selectAllChildren(newdiv);
+            window.setTimeout(function() {
+            body_element.removeChild(newdiv);
+            },0);
+            }
+            document.oncopy = addLink;
+
+            </script>
+</body>
+</html>

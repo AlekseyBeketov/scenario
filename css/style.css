@@ -1,0 +1,916 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    line-height: 48px;  /*Это надо исправить*/
+    font-size: 45px;
+    
+}
+
+
+.header{
+    font-weight: 600;
+    line-height: 226px; 
+    width: 100%;
+    position:absolute;
+    text-align: center;
+    /*display: flex;*     - c этим по аккуратнее*/
+}
+
+.header-menu{
+    display: flex;
+    margin-right: 30px;
+    margin-top:15px;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+
+.header a{
+    margin-right: 12px;
+    box-sizing: border-box;
+    font-size: 35px;
+    text-decoration:none; /* чтобы не было подчеркивания*/
+    color: #fff;
+}
+
+
+
+.main{
+    
+    width: 100%;
+    height: 100vh;
+    background: url("../css/back_main.png");  
+    background-size: cover;
+}
+
+
+
+.textmain1{
+        
+    position:absolute;
+    text-align: center;
+    margin-top: 334px;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 800;
+    font-size: 150px;
+    text-decoration:none; /* чтобы не было подчеркивания*/
+    color: #fff;
+}
+
+.textmain2{   
+    font-weight: 300;
+
+    margin-top: 482px;
+    position:absolute;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+
+    text-decoration:none; /* чтобы не было подчеркивания*/
+    color: #fff;
+
+}   
+
+
+
+/*Вторая страница*/
+
+.con{  
+
+    width: 100%;
+    height: 233vh; /*ЭТО НАДО ЗАПОМНИТЬ было 235*/
+    background: url("../css/news_back.png");  
+    box-sizing: border-box;  
+    background-size: cover; 
+    text-decoration:none; /* чтобы не было подчеркивания*/
+    color: #fff;   
+}
+
+
+.textnews{
+    /*margin-top: 220px;*/
+    margin-left:215px;
+    margin-top: 220px;
+    position:absolute;
+    font-weight: 800; 
+    font-size: 80px;
+}
+
+.textabout{
+    position:absolute;
+    margin-left:215px;
+    margin-top: 305px;
+    line-height: 28px;
+    font-weight: 300; 
+    font-size: 28px;
+}
+
+.newspic1{
+    position: absolute;
+    margin-top: 421px;
+    margin-left: 215px;
+}
+
+.texthead1{
+    font-weight: 700;
+    margin-left:970px;
+    margin-top: 415px;
+    position:absolute;
+    font-size: 45px;
+}
+
+.texthead1_1{
+    font-weight: 700;
+    margin-left:970px;
+    margin-top: 528px;
+    position:absolute;
+    font-size: 35px;
+}
+
+.textnew1{
+    font-weight: 500;
+    margin-left:970px;
+    margin-top: 575px;
+    position:absolute;
+    font-size: 28px;
+    line-height: 34px;
+}   
+
+.newspic2{
+    position: absolute;
+    margin-top: 1020px;
+    margin-left: 1046px;
+}
+
+.texthead2{
+    font-weight: 700;
+    margin-left: 215px;
+    margin-top: 1014px;
+    position:absolute;
+    font-size: 45px;
+}
+
+.textnew2{
+    font-weight: 500;
+    margin-left:215px;
+    margin-right: 878px;
+    margin-top: 1150px;
+    position:absolute;
+    font-size: 28px;
+    line-height: 34px;
+}   
+
+.newspic3{
+    position: absolute;
+    margin-top: 1619px;
+    margin-left: 215px;
+}
+
+.texthead3{
+    font-weight: 700;
+    margin-left:970px;
+    margin-top: 1613px;
+    position:absolute;
+    font-size: 45px;
+}
+
+.textnew3{
+    font-weight: 500;
+    margin-left:970px;
+    margin-top: 1750px;
+    position:absolute;
+    font-size: 28px;
+    line-height: 34px;
+}   
+
+/*Третья страничка*/
+
+.tr{  
+
+    width: 100%;
+    height: 265vh; /*ЭТО НАДО ЗАПОМНИТЬ */
+    background: url("../css/back_trends.png");  
+    background-size: cover; 
+    text-decoration:none; /* чтобы не было подчеркивания*/
+    color: #fff;   
+}
+
+.texttr1{
+    font-weight: 600;
+    margin-left: 215px;
+    margin-top: 432px;
+    position:absolute;
+    font-size: 57px;
+}
+
+.trspic1 {
+    display: flex;
+    font-size: 0px;
+    width: 1900px;
+    cursor:pointer;
+    overflow:hidden;
+    white-space: nowrap;
+    margin-top: 530px;
+    margin-left: 167px; 
+}
+
+.trspic1 img{
+    margin-left: 48px;
+}
+
+.trspic2 {
+    display: flex;
+    font-size: 0px;
+    width: 1900px;
+    cursor:pointer;
+    overflow:hidden;
+    white-space: nowrap;
+    margin-top: 145px;
+    margin-left: 167px; 
+}
+
+.trspic2 img{
+    margin-left: 48px;
+}
+
+.trspic3 {
+    display: flex;
+    font-size: 0px;
+    width: 1900px;
+    cursor:pointer;
+    overflow:hidden;
+    white-space: nowrap;
+    margin-top: 145px;
+    margin-left: 167px; 
+    
+}
+
+.trspic3 img{
+    margin-left: 48px;
+}
+
+
+/* .wrapper{
+    max-width: 1200px;
+    
+}
+
+.wrapper i{
+    margin-left:185px;
+    position: absolute;
+    margin-top:780px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    color: black;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 2000;
+}
+
+.wrapper b{
+    margin-left:1670px;
+    position: absolute;
+    margin-top:780px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    color: black;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 2000;
+} */
+
+.carousel{
+    display: flex;
+    font-size: 0px;
+    width: 1900px;
+    cursor:pointer;
+    overflow:hidden;
+    white-space: nowrap;
+    
+}
+.texttr2{
+    font-weight: 600;
+    margin-left: 215px;
+    margin-top: 62px;
+    position:absolute;
+    font-size: 57px;
+}
+
+.texttr3{
+    font-weight: 600;
+    margin-left: 215px;
+    margin-top: 62px;
+    position:absolute;
+    font-size: 57px;
+}
+
+/* .texttr2{
+    font-weight: 600;
+    margin-left: 215px;
+    margin-top: 1100px;
+    position:absolute;
+    font-size: 57px;
+}
+
+.trspic5{
+    position: absolute;
+    margin-top: 1198px;
+    margin-left: 215px;
+}
+
+.trspic6{
+    position: absolute;
+    margin-top: 1198px;
+    margin-left: 598px;
+}
+
+.trspic7{
+    position: absolute;
+    margin-top: 1198px;
+    margin-left: 981px;
+}
+
+.trspic8{
+    position: absolute;
+    margin-top: 1198px;
+    margin-left: 1364px;
+}
+
+.texttr3{
+    font-weight: 600;
+    margin-left: 215px;
+    margin-top: 1768px;
+    position:absolute;
+    font-size: 57px;
+}
+
+.trspic9{
+    position: absolute;
+    margin-top: 1866px;
+    margin-left: 215px;
+}
+
+.trspic10{
+    position: absolute;
+    margin-top: 1866px;
+    margin-left: 598px;
+}
+
+.trspic11{
+    position: absolute;
+    margin-top: 1866px;
+    margin-left: 981px;
+}
+
+.trspic12{
+    position: absolute;
+    margin-top: 1866px;
+    margin-left: 1364px;
+} */
+
+.films{  
+
+    width: 100%;
+    height: 180vh; /*ЭТО НАДО ЗАПОМНИТЬ */
+    background: url("../css/films_back.png");  
+    box-sizing: border-box;  
+    background-size: cover; 
+    text-decoration:none; /* чтобы не было подчеркивания*/
+    color: #fff;   
+}
+
+
+.film_pic1{
+    position: absolute;
+    margin-top: 255px;
+    margin-left: 215px;
+}
+
+.inside_font1{
+    font-weight: 800;
+    margin-left: 774px;
+    margin-top: 260px;
+    position:absolute;
+    font-size: 90px;
+}
+
+.john_font1{
+    font-weight: 800;
+    margin-left: 774px;
+    margin-top: 260px;
+    position:absolute;
+    font-size: 90px;
+}
+
+.k_tebe_font1{
+    font-weight: 800;
+    margin-left: 774px;
+    margin-top: 270px;
+    position:absolute;
+    font-size: 69px;
+}
+
+.cheb_font1{
+    font-weight: 800;
+    margin-left: 774px;
+    margin-top: 260px;
+    position:absolute;
+    font-size: 90px;
+}
+
+.father_font1{
+    font-weight: 800;
+    margin-left: 774px;
+    margin-top: 260px;
+    position:absolute;
+    font-size: 90px;
+    
+}
+
+.life_font1{
+    font-weight: 800;
+    margin-left: 774px;
+    margin-top: 260px;
+    position:absolute;
+    font-size: 90px;
+}
+
+.inter_font1{
+    font-weight: 800;
+    margin-left: 774px;
+    margin-top: 260px;
+    position:absolute;
+    font-size: 90px;
+}
+
+.list_font1{
+    font-weight: 800;
+    margin-left: 774px;
+    margin-top: 260px;
+    position:absolute;
+    font-size: 90px;
+}
+
+.king_joke_font1{
+    font-weight: 800;
+    margin-left: 774px;
+    margin-top: 260px;
+    position:absolute;
+    font-size: 90px;
+}
+
+.better_call_saul_font1{
+    font-weight: 800;
+    margin-left: 774px;
+    margin-top: 260px;
+    position:absolute;
+    font-size: 90px;
+}
+
+.black_font1{
+    font-weight: 800;
+    margin-left: 774px;
+    margin-top: 260px;
+    position:absolute;
+    font-size: 90px;
+}
+
+.brigada_font1{
+    font-weight: 800;
+    margin-left: 774px;
+    margin-top: 260px;
+    position:absolute;
+    font-size: 90px;
+}
+
+
+.films_font2{
+    font-weight: 300;
+    margin-left: 774px;
+    margin-top: 380px;
+    position:absolute;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.films_font3{
+    font-weight: 300;
+    margin-left: 1200px;
+    margin-top: 380px;
+    position:absolute;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.films_font4{
+    font-weight: 700;
+    margin-left:215px;
+    margin-top: 1030px;
+    position: absolute;
+    font-size: 70px;
+}
+
+.films_font5{
+    font-weight: 300;
+    margin-left:215px;
+    margin-right:920px;
+    margin-top: 1135px;
+    position: absolute;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.films_font6{
+    font-weight: 300;
+    margin-left:215px;
+    margin-right:215px;
+    margin-top: 1457px;
+    position: absolute;
+    font-size: 32px;
+    line-height: 38px;
+
+}
+
+.film_trailer{
+    margin-top:1030px;
+    position: absolute;
+    margin-left:1005px;
+}
+
+.skoro{
+     width: 100%;
+    height: 100vh; 
+    background: url("../css/skoro_back.png");  
+    box-sizing: border-box;  
+    background-size: cover; 
+    text-decoration:none; 
+    color: #fff;    
+}
+
+.poprikolu{
+    height: 100vh; 
+    vertical-align: middle;    
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poprikolu img{
+    margin-top: 100px;
+    background: transparent;
+    color:#fff;    
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.poprikolu img:hover{
+ transform:scale(1.15)    
+}
+
+
+.form{
+    position: absolute;
+    margin-left:1095px;
+    margin-top:3768px;
+    background: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form .form-title{
+    
+    font-weight: 600;
+    padding:20px;
+    font-size:48px;
+    color:black;
+}
+
+.form .form-input{
+    margin: 10px 0px;
+}
+
+.form .form-input label, .form .captcha label{
+    display: block;
+    font-size:15px;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.form .form-input input{
+    width: 100%;
+    padding: 10px;
+    border:1px solid;
+    font-size:15px;
+}
+
+
+
+.form .captcha {
+    margin:15px 0px;
+}
+
+.form .captcha .preview{
+    color:black;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 8px;
+    border:1px solid;
+    
+}
+
+.form .captcha .preview span{
+    display: inline-block;
+    user-select: none;
+}
+
+.form .captcha .captcha-form{
+    display: flex;
+}
+
+
+
+.form .captcha .captcha-form .captcha-refresh{
+    margin-top:-42px;
+    width: 42px;
+    height:42px;
+    padding:20px;
+    border:none;
+    outline:none;
+    background: #888;
+    color:#eee;
+    cursor:pointer;
+}
+
+.form #enter-captcha{
+    margin-top:5px;
+    width: 100%;
+    padding:10px;
+    border:none;
+    outline:none;
+    font-size:15px;
+    text-transform: uppercase;
+
+    cursor:pointer;
+}
+
+/*Пятая страничка*/
+
+.trr{  
+
+    width: 100%;
+    height: 490vh; /*ЭТО НАДО ЗАПОМНИТЬ */
+    background: url("../css/ananas_back.png");  
+        box-sizing: border-box;  
+
+    text-decoration:none; /* чтобы не было подчеркивания*/
+    color: #fff;   
+}
+
+
+
+.aboutpic1{
+    position: absolute;
+    margin-top: 421px;
+    margin-left: 215px;
+}
+
+.pic2{
+    position: absolute;
+    margin-top: 1019px;
+    margin-left: 1161px;
+}
+
+.pic3{
+    position: absolute;
+    margin-top: 1970px;
+    margin-left: 215px;
+}
+
+.pic4{
+    position: absolute;
+    margin-top: 2922px;
+    margin-left: 1161px;
+}
+
+.textpic1{
+    position:absolute;
+    margin-left:1020px;
+    margin-top: 530px;
+    line-height: 41px;
+    font-weight: 400; 
+    font-size: 35px;
+}
+
+.textfam1{
+    /*margin-top: 220px;*/
+    margin-left:215px;
+    margin-top:1019px;
+    position:absolute;
+    font-weight: 800; 
+    font-size: 97px;
+}
+
+.textfam2{
+    /*margin-top: 220px;*/
+    margin-left:895px;
+    margin-top:1970px;
+    position:absolute;
+    font-weight: 800; 
+    font-size: 97px;
+}
+
+.textfam3{
+    /*margin-top: 220px;*/
+    margin-left:215px;
+    margin-top:2926px;
+    position:absolute;
+    font-weight: 800; 
+    font-size: 97px;
+}
+
+.textname1{
+    /*margin-top: 220px;*/
+    margin-left:215px;
+    margin-top: 1105px;
+    position:absolute;
+    font-weight: 800; 
+    font-size: 65px;
+}
+
+.textname2{
+    /*margin-top: 220px;*/
+    margin-left:895px;
+    margin-top: 2053px;
+    position:absolute;
+    font-weight: 800; 
+    font-size: 65px;
+}
+
+.textname3{
+    /*margin-top: 220px;*/
+    margin-left:215px;
+    margin-top: 3008px;
+    position:absolute;
+    font-weight: 800; 
+    font-size: 65px;
+}
+
+.kodalex1{
+    position: absolute;
+    margin-top: 1260px;
+    margin-left: 215px;
+}
+
+.kodsasha1{
+    position: absolute;
+    margin-top: 2205px;
+    margin-left: 892px;
+}
+
+.kodliza1{
+    position: absolute;
+    margin-top: 3158px;
+    margin-left: 215px;
+}
+
+.kodalex2{
+    position: absolute;
+    margin-top: 1260px;
+    margin-left: 615px;
+}
+
+.kodsasha2{
+    position: absolute;
+    margin-top: 2205px;
+    margin-left: 1335px;
+}
+
+.kodliza2{
+    position: absolute;
+    margin-top: 3158px;
+    margin-left: 657px;
+}
+
+.textpochta1{
+    position:absolute;
+    margin-left:215px;
+    margin-top: 1678px;
+    line-height: 28px;
+    font-weight: 500; 
+    font-size: 64px;
+}
+
+.textpochta2{
+    position:absolute;
+    margin-left:896px;
+    margin-top: 2629px;
+    line-height: 28px;
+    font-weight: 500; 
+    font-size: 48px;
+}
+
+.textpochta3{
+    position:absolute;
+    margin-left:215px;
+    margin-top: 3582px;
+    line-height: 28px;
+    font-weight: 500; 
+    font-size: 63px;
+}
+
+.formsend{
+    position:absolute;
+    margin-left:215px;
+    margin-top: 3700px;
+    font-weight: 600;
+    font-size:  48px;
+
+
+}
+
+.formsend boba{
+
+}
+
+
+.formsend.textarea{
+    position:absolute;
+    margin-left:215px;
+    margin-top: 3700px;
+    font-weight: 600;
+    font-size:  48px;
+        cursor:pointer;
+
+}
+
+input{
+    display:block;
+    margin: 0 auto;
+    font-size:40px;
+    font-weight: 600;
+    background: #fff;
+    margin-bottom:30px;
+    margin-top: 20px;
+    margin-left: 0px;
+    padding: 20px;
+    color: black;
+    outline: none;
+    border: none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius:8px;
+    hight: 400px ;
+    weight: 650px;
+    
+}
+
+textarea{
+    margin-top: 20px;
+    margin-bottom:30px;
+    font-size:25px;
+    font-weight: 500;
+    color: grey;
+
+}
+
+.formbutton{
+    margin-top: 20px;
+    font-size:30px;
+    font-weight: 500;
+    
+
+    
+
+}
+
+.formsenda{
+    visibility: hidden;
+}
+
+.formsendb{
+    visibility: visible;
+}
+
+
+
+
+
+
